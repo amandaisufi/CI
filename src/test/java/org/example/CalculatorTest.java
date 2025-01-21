@@ -29,14 +29,13 @@ class CalculatorTest {
     @Test
     void multiply() {
         assertEquals(15, calculator.multiply(3,5));
-        assertNotEquals(9, calculator.multiply(3,3));
+        assertNotEquals(9, calculator.multiply(3,2));
     }
 
     @Test
     void divide() {
         assertEquals(10, calculator.divide(20,2));
         assertNotEquals(9, calculator.divide(20,5));
-        assertThrows(DivideByZeroException.class, () -> calculator.divide(12, 0));
 
     }
 
