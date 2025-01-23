@@ -39,4 +39,8 @@ class CalculatorTest {
 
     }
 
+    @Test
+    void quadrieren() {
+        assertEquals(4, calculator.quadrieren(2));
+    }
 }
